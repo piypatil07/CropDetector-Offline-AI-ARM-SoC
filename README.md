@@ -113,9 +113,5 @@ The script is a **static asset integrity check**, not a test that the classifier
 - [ ] Rebuild from a fresh checkout / compatible toolchain
 - [ ] Third-party licensing review and select a project license
 - [ ] Add missing original Stage C training/export material if obtainable
-- [ ] Faculty mentor review (recommended by challenge)
-- [ ] Publish repository Public and copy its link into the submission form
-- [ ] Publish a **public 2-minute 1080p/16:9 MP4** demonstration
-- [ ] Upload the final report in PDF or Word format
 
 Project evidence and limitations are described for engineering evaluation; no warranty of agronomic accuracy is made.
