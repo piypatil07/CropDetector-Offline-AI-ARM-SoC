@@ -1,0 +1,13 @@
+{
+  "selected_checkpoint": "Fine-tuned",
+  "development_accuracy": 0.7527777777777778,
+  "development_balanced_accuracy": 0.7891115621550405,
+  "known_dev_retention_at_gate": 0.9009009009009009,
+  "seen_other_dev_rejection_at_gate": 0.7463768115942029,
+  "unseen_other_rejection_at_gate": 0.594059405940594,
+  "unseen_other_false_supported_acceptance": 0.40594059405940597,
+  "threshold": 0.3307717652236072,
+  "train_images": 1441,
+  "dev_images": 360,
+  "unseen_images": 303
+}

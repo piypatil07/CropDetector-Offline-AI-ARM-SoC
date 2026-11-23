@@ -1,0 +1,126 @@
+{
+    "model_name": "CropDetector_V1",
+    "architecture": "MobileNetV2",
+    "input_shape": [
+        1,
+        224,
+        224,
+        3
+    ],
+    "input_pixel_range": [
+        0,
+        255
+    ],
+    "output_type": "logits",
+    "num_classes": 15,
+    "class_names": [
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "Corn_(maize)___Common_rust_",
+        "Corn_(maize)___Northern_Leaf_Blight",
+        "Corn_(maize)___healthy",
+        "Grape___Black_rot",
+        "Grape___Esca_(Black_Measles)",
+        "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "Grape___healthy",
+        "Potato___Early_blight",
+        "Potato___Late_blight",
+        "Potato___healthy",
+        "Tomato___Bacterial_spot",
+        "Tomato___Early_blight",
+        "Tomato___Late_blight",
+        "Tomato___healthy"
+    ],
+    "display_names": [
+        "Maize - Gray Leaf Spot",
+        "Maize - Common Rust",
+        "Maize - Northern Leaf Blight",
+        "Maize - Healthy",
+        "Grape - Black Rot",
+        "Grape - Esca",
+        "Grape - Leaf Blight",
+        "Grape - Healthy",
+        "Potato - Early Blight",
+        "Potato - Late Blight",
+        "Potato - Healthy",
+        "Tomato - Bacterial Spot",
+        "Tomato - Early Blight",
+        "Tomato - Late Blight",
+        "Tomato - Healthy"
+    ],
+    "class_crops": [
+        "Maize",
+        "Maize",
+        "Maize",
+        "Maize",
+        "Grape",
+        "Grape",
+        "Grape",
+        "Grape",
+        "Potato",
+        "Potato",
+        "Potato",
+        "Tomato",
+        "Tomato",
+        "Tomato",
+        "Tomato"
+    ],
+    "supported_crops": [
+        "Maize",
+        "Grape",
+        "Potato",
+        "Tomato"
+    ],
+    "default_mode": "Crop-Aware",
+    "confidence_thresholds": {
+        "Automatic": 0.7,
+        "Crop-Aware": 0.65
+    },
+    "input_validation_enabled": false,
+    "models": {
+        "FP32": {
+            "filename": "crop_detector_fp32.tflite",
+            "sha256": "55436cd2e1f7c7f896c8f3a2165a85d1baf587bee404a8ad319b4c00f43548fb",
+            "size_bytes": 8968264,
+            "input_dtype": "float32",
+            "output_dtype": "float32",
+            "input_scale": 0.0,
+            "input_zero_point": 0,
+            "output_scale": 0.0,
+            "output_zero_point": 0,
+            "temperatures": {
+                "Automatic": 1.9968168675423656,
+                "Crop-Aware": 2.625848944668537
+            }
+        },
+        "FP16": {
+            "filename": "crop_detector_fp16.tflite",
+            "sha256": "568459127e7f852757a72122b70e9aa4dab6b0d5192c3b28fc5ea7d3e27989af",
+            "size_bytes": 4552616,
+            "input_dtype": "float32",
+            "output_dtype": "float32",
+            "input_scale": 0.0,
+            "input_zero_point": 0,
+            "output_scale": 0.0,
+            "output_zero_point": 0,
+            "temperatures": {
+                "Automatic": 1.9972384073712712,
+                "Crop-Aware": 2.6246368693038127
+            }
+        },
+        "INT8": {
+            "filename": "crop_detector_int8.tflite",
+            "sha256": "03a7caa1b66f5efbb666730e195914361ac8adc5f8d8b477be2cf6f291454743",
+            "size_bytes": 2755824,
+            "input_dtype": "int8",
+            "output_dtype": "int8",
+            "input_scale": 1.0,
+            "input_zero_point": -128,
+            "output_scale": 0.15760523080825806,
+            "output_zero_point": 28,
+            "temperatures": {
+                "Automatic": 2.0425298902491233,
+                "Crop-Aware": 2.7715005279885156
+            }
+        }
+    }
+}

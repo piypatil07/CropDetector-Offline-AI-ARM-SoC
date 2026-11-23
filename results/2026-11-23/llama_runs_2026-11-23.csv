@@ -1,0 +1,3 @@
+crop,condition_passed,request_time,rss_after_mib,prompt_tokens,generated_tokens,llm_inference_s,decode_s,decode_tokens_per_s,advisory_total_s,chars
+Maize,False,11-23 18:59:04.584,878.527344,136,88,17.318,9.85,8.93401,23.8741,432
+Maize,True,11-23 19:00:01.243,878.527344,141,137,33.581,24.814,5.521077,42.1818,695

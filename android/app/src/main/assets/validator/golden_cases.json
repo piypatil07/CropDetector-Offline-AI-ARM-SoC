@@ -1,0 +1,154 @@
+[
+  {
+    "case": 0,
+    "source": "PlantDoc",
+    "role": "Unsupported Crop",
+    "folder": "Apple Scab Leaf",
+    "expected_truth": 0,
+    "input_file": "golden_inputs/validator_00.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": -19.534435272216797,
+      "INT8": -17.798130378127098
+    }
+  },
+  {
+    "case": 1,
+    "source": "PlantDoc",
+    "role": "Supported",
+    "folder": "Corn Gray leaf spot",
+    "expected_truth": 0,
+    "input_file": "golden_inputs/validator_01.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": -17.66194725036621,
+      "INT8": -19.33624041080475
+    }
+  },
+  {
+    "case": 2,
+    "source": "PlantDoc",
+    "role": "Supported",
+    "folder": "Potato leaf early blight",
+    "expected_truth": 0,
+    "input_file": "golden_inputs/validator_02.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": -18.561410903930664,
+      "INT8": -19.116510406136513
+    }
+  },
+  {
+    "case": 3,
+    "source": "PlantDoc",
+    "role": "Supported",
+    "folder": "Tomato Early blight leaf",
+    "expected_truth": 0,
+    "input_file": "golden_inputs/validator_03.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": -24.18984603881836,
+      "INT8": -23.9505705088377
+    }
+  },
+  {
+    "case": 4,
+    "source": "NaturalImages",
+    "role": "Non-plant",
+    "folder": "airplane",
+    "expected_truth": 1,
+    "input_file": "golden_inputs/validator_04.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": 19.65998649597168,
+      "INT8": 18.23759038746357
+    }
+  },
+  {
+    "case": 5,
+    "source": "NaturalImages",
+    "role": "Non-plant",
+    "folder": "car",
+    "expected_truth": 1,
+    "input_file": "golden_inputs/validator_05.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": 17.527250289916992,
+      "INT8": 17.13894036412239
+    }
+  },
+  {
+    "case": 6,
+    "source": "NaturalImages",
+    "role": "Non-plant",
+    "folder": "cat",
+    "expected_truth": 1,
+    "input_file": "golden_inputs/validator_06.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": 15.553304672241211,
+      "INT8": 14.941640317440033
+    }
+  },
+  {
+    "case": 7,
+    "source": "NaturalImages",
+    "role": "Non-plant",
+    "folder": "dog",
+    "expected_truth": 1,
+    "input_file": "golden_inputs/validator_07.bin",
+    "input_shape": [
+      1,
+      160,
+      160,
+      3
+    ],
+    "input_dtype": "float32_little_endian",
+    "expected_nonplant_logits": {
+      "FP32": 10.307395935058594,
+      "INT8": 10.547040224075317
+    }
+  }
+]

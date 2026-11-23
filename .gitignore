@@ -1,0 +1,39 @@
+# macOS / IDE / Java / Gradle
+.DS_Store
+*.iml
+.idea/
+.gradle/
+**/.gradle/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+local.properties
+**/local.properties
+/captures/
+*.hprof
+*.apk
+*.aab
+# No credentials in the public repository
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+secrets.properties
+# Large/licensed external model weights; Android's small tested TFLite assets are committed intentionally
+*.pte
+tokenizer.model
+*.gguf
+*.safetensors
+*.keras
+*.h5
+*.ckpt
+# Device dumps and locally downloaded dataset caches
+raw_data/
+datasets/
+downloads/
+outputs/
+__pycache__/
+.ipynb_checkpoints/

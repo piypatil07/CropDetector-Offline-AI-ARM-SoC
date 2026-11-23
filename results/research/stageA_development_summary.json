@@ -1,0 +1,94 @@
+{
+  "chosen_model": "Fine-tuned",
+  "model_comparison": [
+    {
+      "Model": "Frozen head",
+      "Overall accuracy (%)": 99.90118577075098,
+      "Plant recall (%)": 99.76190476190476,
+      "Non-plant recall (%)": 100.0,
+      "Balanced accuracy (%)": 99.88095238095238,
+      "AUROC (%)": 99.9995978120978,
+      "NLL": 0.0037659704784770436
+    },
+    {
+      "Model": "Fine-tuned",
+      "Overall accuracy (%)": 100.0,
+      "Plant recall (%)": 100.0,
+      "Non-plant recall (%)": 100.0,
+      "Balanced accuracy (%)": 100.0,
+      "AUROC (%)": 100.0,
+      "NLL": 0.0006030612243283427
+    }
+  ],
+  "threshold": 0.9999020462309999,
+  "dev_plant_retention": 0.95,
+  "dev_nonplant_rejection": 1.0,
+  "per_role": [
+    {
+      "Role": "Non-plant",
+      "Count": 592,
+      "Accepted as plant": 0,
+      "Accepted (%)": 0.0,
+      "Rejected (%)": 100.0
+    },
+    {
+      "Role": "Supported",
+      "Count": 156,
+      "Accepted as plant": 149,
+      "Accepted (%)": 95.51282051282051,
+      "Rejected (%)": 4.487179487179487
+    },
+    {
+      "Role": "Unsupported Condition",
+      "Count": 66,
+      "Accepted as plant": 63,
+      "Accepted (%)": 95.45454545454545,
+      "Rejected (%)": 4.545454545454546
+    },
+    {
+      "Role": "Unsupported Crop",
+      "Count": 198,
+      "Accepted as plant": 187,
+      "Accepted (%)": 94.44444444444444,
+      "Rejected (%)": 5.555555555555555
+    }
+  ],
+  "per_object": [
+    {
+      "Object category": "airplane",
+      "Count": 95,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    },
+    {
+      "Object category": "car",
+      "Count": 98,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    },
+    {
+      "Object category": "cat",
+      "Count": 98,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    },
+    {
+      "Object category": "dog",
+      "Count": 99,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    },
+    {
+      "Object category": "motorbike",
+      "Count": 101,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    },
+    {
+      "Object category": "person",
+      "Count": 101,
+      "False plant acceptance (%)": 0.0,
+      "Rejection (%)": 100.0
+    }
+  ]
+}

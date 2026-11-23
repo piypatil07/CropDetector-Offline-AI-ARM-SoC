@@ -1,0 +1,64 @@
+{
+  "phase": "Phase9_Part5_StageA_INT8",
+  "task": "plant-like-versus-non-plant",
+  "input_shape": [
+    1,
+    160,
+    160,
+    3
+  ],
+  "rgb_input_range": [
+    0,
+    255
+  ],
+  "preprocessing": "EXIF transpose; RGB; bilinear resize; model rescales internally",
+  "output": "one NON-PLANT logit",
+  "plant_score_formula": "sigmoid(-nonplant_logit)",
+  "provisional_plant_acceptance_threshold": 0.5,
+  "diagnostic_original_strict_threshold": 0.9999020462309999,
+  "quantization_representative_images": 300,
+  "quantization_source": "Stage A training only; 150 PlantDoc plus 150 Natural Images",
+  "prior_stageA_model_sha256": "c0f32d91f73b52a8a440746f8f36cb13b2cfb8c19e3ac3915db90c4b20efcaf3",
+  "part2_manifest_sha256": "9aa8a04af6102c49d921588c5d8af223196759a72c6ae909ba380a62a76c1836",
+  "models": {
+    "FP32": {
+      "filename": "crop_validator_stageA_fp32.tflite",
+      "sha256": "85333f2e97ddeb089dbea1505f794a3d10f9493c1aae126cd0dc8728171a0c98",
+      "size_bytes": 1629544,
+      "input_dtype": "float32",
+      "output_dtype": "float32",
+      "input_quantization": {
+        "scale": 0.0,
+        "zero_point": 0
+      },
+      "output_quantization": {
+        "scale": 0.0,
+        "zero_point": 0
+      }
+    },
+    "INT8": {
+      "filename": "crop_validator_stageA_int8.tflite",
+      "sha256": "d991291b843a4995ef5dd1d68696aa7b63866190adf6a0b99ce17fb8f647b18f",
+      "size_bytes": 653352,
+      "input_dtype": "int8",
+      "output_dtype": "int8",
+      "input_quantization": {
+        "scale": 1.0,
+        "zero_point": -128
+      },
+      "output_quantization": {
+        "scale": 0.21973000466823578,
+        "zero_point": 10
+      }
+    }
+  },
+  "quantization_regression": {
+    "samples": 1012,
+    "fp32_int8_top1_agreement_percent": 100.0,
+    "logit_mean_abs_error": 0.8807863059045062,
+    "logit_max_abs_error": 5.075357601046562,
+    "changed_decisions": 0
+  },
+  "independent_field_validation": false,
+  "warning": "Plant-like detection only. Does not identify supported crops or image diagnostic suitability."
+}
